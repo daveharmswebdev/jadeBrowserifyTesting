@@ -13,7 +13,7 @@
   "devDependencies": {},
   "scripts": {
     "build": "browserify -t jadeify src/main.js -o dist/bundle.js",
-    "watch": "watchify -t jadeify src/main.js -o dist/bundle.js -v"
+    "watch": "watchify -t jadeify -t hbsfy src/main.js -o dist/bundle.js -v"
   },
   "author": "",
   "license": "ISC"

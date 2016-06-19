@@ -7,5 +7,7 @@ nav.nav
 	p= name + ' lives in ' + city + ' with his wife ' + wife
 	ul
 		each val in testArray
-		each val in val
- 			li= val.a + ' ' + va.b
+			li= val.a + ' ' + val.b
+	select
+		each val in testArray
+			option(value=val.a) #{val.b}
